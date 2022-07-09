@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Lobster&family=Plus+Jakarta+Sans:ital,wght@0,400;1,300;1,400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated {
+    font-family:'Charm', cursive ;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/text-bg.jpg");
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: move-bg 50s+ linear infinite;
+    /* -webkit-animation:move-bg 90s linear infinite ; */
+}
+
+@keyframes move-bg{
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+
+}
+
+
+
+
+

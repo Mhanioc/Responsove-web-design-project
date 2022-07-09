@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Web Project\\javascript\\Bob Tabor"
+		},
+		{
+			"path": "..\\..\\..\\Web Project\\Web project template"
+		},
+		{
+			"path": "..\\..\\..\\..\\Videos\\comp science\\WEB DEVELOPMENT\\FRONT END DEVELOPMENT\\front end project\\Web template\\web template 1"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fccprojects"
+	}
+}

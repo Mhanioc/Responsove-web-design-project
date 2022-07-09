@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --highlight-color: #f95d13;
+    --back-color: #171717;
+    --white-color: #fff;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#logo{
+    width: 25%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.left{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--back-color);
+    color: var(--white-color);
+    padding-bottom: 30px;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.form{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   padding: 5px 30px;
+}
+
+.form .form-field{
+    margin: 0 0 15px 0;
+}
+.form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input{
+    display: block;
+    width: 100%;
+    padding:10px 20px;
+}
+
+.btn{
+    background-color: var(--highlight-color);
+    color: var(--white-color);
+    font-size: 1.15em;
+    font-weight: 500;
+    border: 0;
+}
+
+
+.extras a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.extras p{
+
+}
+.extras hr{
+    display: inline-block;
+    width: 27%;
+    vertical-align: middle;
+}
+
+#create-acct{
+    display: inline-block;
+    margin-top: 15px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 9px 50px;
+    border: 1px solid var(--white-color);
+}
+
+footer p{
+    margin-bottom: 5px;
+}
+
+.colored{
+    color: var(--highlight-color);
+    padding: 5px;
+}
+
+
+.right{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:url("img/pluralsight-bg.jpg");
+    background-size: cover;
+    color: var(--white-color);
+    padding-bottom: 30px;
+}
+
+.right .ads-content a{
+    display: inline-block;
+    border: 1px solid var(--white-color);
+    padding: 9px 25px;
+    margin-top: 15px;
+}
+
+
+footer{
+    font-size: 0.75em;
+}
+.left,
+.right{
+    padding: 5px 30px 100px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px){
+    .container{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-box{
+        text-align: center;
+    }
+    #logo{
+        width: 30%;
+        height: auto;
+    }
+
+    .form{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 5px 0;
+     }
+     
+     .form .form-field{
+         margin: 0 0 15px 0;
+     }
+     .form label{
+         display: block;
+         margin-bottom: 5px;
+     }
+     
+     .form input{
+         display: block;
+         width: 100%;
+         padding:5px 20px;
+     }
+     
+     .btn{
+         background-color: var(--highlight-color);
+         color: var(--white-color);
+         font-size: 1.15em;
+         font-weight: 500;
+     }
+     
+     
+     .extras a{
+         display: block;
+         font-size: 1005;
+         margin-bottom: 5px;
+     }
+     
+     .extras p{
+     
+     }
+     .extras hr{
+         display: inline-block;
+         width: 27%;
+         vertical-align: middle;
+     }
+     
+     #create-acct{
+         display: inline-block;
+         margin-top: 10px;
+         margin-bottom: 20px;
+         text-transform: capitalize;
+         width: 100%;
+         padding: 9px 20px;
+         border: 1px solid var(--white-color);
+     }
+
+     footer{
+         font-size: 100%;
+     }
+
+}
+
+@media (min-width: 900px){
+    .container{
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+    }
+
+    #logo{
+        width: 20%;
+    }
+}
